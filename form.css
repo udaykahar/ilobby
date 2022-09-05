@@ -1,0 +1,40 @@
+#success_message{ display: none;}
+
+#form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.form-divder{
+    flex: 1;
+    margin: 0 10px;
+    justify-content: flex-start;
+}
+.form-horizontal .form-group {
+    /* width: 800px; */
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-divider h2{
+    /* padding-left: 150px; */
+    margin: 30px;
+    text-align: right;
+}
+.form{
+    margin: 0 auto;
+}
+/* media queries*/
+@media screen and (max-width: 770px) {
+    #form-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .form-horizontal .form-group {
+        width: 100%;
+    }
+    .form-divider h2{
+        /* padding-left: 150px; */
+        margin: 0px;
+        text-align: left;
+    }
+}
