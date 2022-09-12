@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Generate random
+		alpha-numeric string in JavaScript
+	</title>
+</head>
+
+<body style="text-align:center;"
+	id="body">
+	<h1 style="color:rgb(0, 92, 128);">
+			ILobby | Team Heptagon
+		</h1>
+	<p id="iLobby_UP"
+	style="font-size: 19px;
+			font-weight: bold;">
+	</p>
+	<button onClick="iLobby()">
+		click here
+	</button>
+	<p id="iLobby_DOWN"
+	style="color: rgb(0, 92, 128);
+			font-size: 24px;
+			font-weight: bold;">
+	</p> 
+	<script>
+		var up = document.getElementById('iLobby_UP');
+		var down = document.getElementById('iLobby_DOWN');
+		up.innerHTML =
+		'Click on the button to generate alpha-numeric string';
+
+		function randomStr(len, arr) {
+			var ans = '';
+			for (var i = len; i > 0; i--) {
+				ans +=
+				arr[Math.floor(Math.random() * arr.length)];
+			}
+			return ans;
+		}
+
+		function iLobby() {
+			down.innerHTML = randomStr(20, '12345');
+		}
+	</script>
+</body>
+
+</html>
